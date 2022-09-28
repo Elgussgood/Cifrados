@@ -1,0 +1,47 @@
+.barra{
+    position: relative;
+    color: #20C20E;
+    text-align: center;
+    font-size: 8rem;
+    padding: 1px;
+}
+.pname{
+    font-size: 1rem;
+    margin: 1px;
+}
+
+.frame{
+    width: 110rem; 
+    height: 48rem;
+    border: none;
+
+}
+button{
+    height: 4rem;
+    width: auto;
+    border-color: #20C20E;
+    border-radius: 10px;
+    color: #20C20E;
+    background-color: black; 
+    font-size: 2rem;
+    font-family: 'Noto Sans Mono', monospace;
+}
+.bcesar{
+position: relative;
+top: 25rem;
+left: 40rem;
+}
+.bviggener{
+    position: relative;
+    top: 21rem;
+    left:70rem;
+}
+.letra{
+    color: #20C20E;
+    font-family: 'Noto Sans Mono', monospace;
+}
+*{
+    color: #20C20E;
+    font-family: 'Noto Sans Mono', monospace;
+    background-color: black;
+}
