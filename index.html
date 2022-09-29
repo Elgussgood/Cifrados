@@ -7,11 +7,31 @@
     <title>Cifrados</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="./js/Cesar.js"></script>
+    <script src="./js/Viggenere.js"></script>
+    <script src="./js/Menu.js"></script>
 </head>
 <body>
 <div class="barra">Cifrados
     <p class="pname">5IV10 Suárez Ramírez Gustavo</p>
 </div>
-<iframe class="frame" name="frame" src="menu.html" ></iframe>
+<div class="menu">    
+    <form action="Cesar.html" class="bcesar">
+        <h1>Cifrado Cesar</h1>
+        <br><br>
+        <button onclick="Cesar()">Cesar</button>
+    </form>
+    <div class="bviggener">
+        <h1>Cifrado Viggenere</h1>
+        <br><br>
+        <button onclick="Viggenere()">Viggenere</button>
+    </div>
+</div>
+<div id="Menu_cesar" class="Menu_cesar">
+<p>Cifrado Cesar</p>
+</div>
+<div id="Menu_viggenere" class="Menu_viggenere">
+    <p>Cifrado Cesar</p>
+</div>    
 </body>
 </html>
