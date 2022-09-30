@@ -56,10 +56,12 @@ var cesar=cesar|| (function(){
     };
 })();
 
-function cifrarCesar(){
-    document.getElementById('resultadoCesar').innerHTML = cesar.encode(document.getElementById('cadena').value, parseInt(document.getElementById("desp").value))
+function cifrar(){
+    document.getElementById('resultadoC').innerHTML= 
+    cesar.encode(document.getElementById('cadena').value, parseInt(document.getElementById("desp").value));   
 }
 
-function descifrarCesar(){
-    document.getElementById('resultadoCesar').innerHTML = cesar.decode(document.getElementById('cadena').value, parseInt(document.getElementById("desp").value))
+function descifrar(){
+    document.getElementById("resultadoC").innerHTML=
+    cesar.decode(document.getElementById("cadena").value, parseInt(document.getElementById("desp").value));
 }
