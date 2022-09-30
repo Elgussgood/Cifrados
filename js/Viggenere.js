@@ -52,7 +52,7 @@ $(document).ready(function(){
                 newMess+=abc[newValores]
             }
 
-            document.getElementById("res").innerHTML = `keyCompleta: ${keyCompleta}<br> Cifrado: ${newMess}`
+            document.getElementById("resultadoV").innerHTML = `keyCompleta: ${keyCompleta}<br> Cifrado: ${newMess}`
 
         }else{
             alert("No sirve cifrar")
@@ -102,7 +102,7 @@ $(document).ready(function(){
                 newMess+=abc[newValores]
             }
 
-            document.getElementById("res").innerHTML = `keyCompleta: ${keyCompleta}<br> Descifrado: ${newMess}`
+            document.getElementById("resultadoV").innerHTML = `keyCompleta: ${keyCompleta}<br> Descifrado: ${newMess}`
 
         }else{
             alert("No sirve descifrar")

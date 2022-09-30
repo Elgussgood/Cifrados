@@ -7,11 +7,9 @@
     <title>Cifrados</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="./js/Cesar.js"></script>
-    <script src="./js/Viggenere.js"></script>
-    <script src="./js/Menu.js"></script>
 </head>
 <body>
+    
     <div class="barra">Cifrados
         <p class="pname">5IV10 Suárez Ramírez Gustavo</p>
     </div>
@@ -31,33 +29,38 @@
 
     <div id="Menu_cesar">
         <h1>Cifrado Cesar</h1>
-        <label for="txt">Introduce la frase que quieres cifrar con cifrado cesar </label>
-        <input type="text" name="txt" id="cadena">
+        <label for="cadena">Introduce la frase que quieres cifrar con cifrado cesar </label>
+        <input type="text" name="cadena" id="cadena">
         <br><br>
         <label for="desp">Coloca las casillas que quieres recorrer</label>
-        <input type="text" name="desp">
+        <input type="number" name="desp" id="desp">
         <br><br>
-        <button onclick="cifrar();" value="Cifrar">Cifrar</button><button  onclick="descifrar();">Decifrar</button>
+        <button onclick="cifrarCesar();" value="Cifrar">Cifrar</button><button  onclick="descifrarCesar();" value="Descifrar">Decifrar</button>
         <br><br>
-        <label for="resultadoC">Mensaje Cifrado:</label>
-        <div id="resultadoC"></div>
+        <label for="resultadoCesar">Mensaje Cifrado:</label>
+        <div id="resultadoCesar"></div>
         <br><br>
         <button onclick="Menu();">Regresar a Menu</button>
     </div>
     
     <div id="Menu_viggenere">
         <h1>Cifrado Viggenere</h1>
-        <label for="MensajeV">Introduce la frase que quieres cifrar con cifrado viggenere </label>
-        <input type="text" name="MensajeV">
+        <label for="mess">Introduce la frase que quieres cifrar con cifrado viggenere </label>
+        <input type="text" id="mess">
         <br><br>
-        <label for="Clave">Coloca la clave para cifrar</label>
-        <input type="text" name="Clave">
+        <label for="llave">Coloca la clave para cifrar</label>
+        <input type="text" id="llave">
         <br><br>
-        <label for="resultadoV">Coloca la clave para cifrar</label>
+        <button type="button" value="Cifrar" id="ci">Cifrar</button><button type="button" value="Descifrar" id="di">Decifrar</button>
+        <br><br>
+        <label for="resultadoV">Mensaje Cifrado: </label>
         <p id="resultadoV"></p>
         <br><br>
         <button onclick="Menu();">Regresar a Menu</button>
     </div> 
-       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/Cesar.js"></script>
+    <script src="./js/Viggenere.js"></script>
+    <script src="./js/Menu.js"></script>
 </body>
 </html>

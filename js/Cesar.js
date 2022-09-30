@@ -10,7 +10,7 @@ var cesar=cesar|| (function(){
         return function(c){
             //Necesitamos saber la posicion del abecedario de acuerdo al desplazamiento
             var i=abc.indexOf(c.toLowerCase());
-            /*Necesitamos saber donde estamos dentro de la matriz abc y como la vamos a recorrer
+            /*Necesitamos saber donde estamos dentro d e la matriz abc y como la vamos a recorrer
             para el momento del cifrado*/
             if(i !=- 1){
                 //Primero obtenemos la posicion para el desplazamiento
@@ -56,10 +56,10 @@ var cesar=cesar|| (function(){
     };
 })();
 
-function cifrar(){
-    document.getElementById("resultadoC").innerHTML= cesar.encode(document.getElementById('cadena').value, parseInt(document.getElementById("desp").value))   
+function cifrarCesar(){
+    document.getElementById('resultadoCesar').innerHTML = cesar.encode(document.getElementById('cadena').value, parseInt(document.getElementById("desp").value))
 }
 
-function descifrar(){
-    document.getElementById("resultadoC").innerHTML=cesar.decode(document.getElementById("cadena").value,3);
+function descifrarCesar(){
+    document.getElementById('resultadoCesar').innerHTML = cesar.decode(document.getElementById('cadena').value, parseInt(document.getElementById("desp").value))
 }
