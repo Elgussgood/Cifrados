@@ -12,26 +12,52 @@
     <script src="./js/Menu.js"></script>
 </head>
 <body>
-<div class="barra">Cifrados
-    <p class="pname">5IV10 Suárez Ramírez Gustavo</p>
-</div>
-<div class="menu">    
-    <form action="Cesar.html" class="bcesar">
-        <h1>Cifrado Cesar</h1>
-        <br><br>
-        <button onclick="Cesar()">Cesar</button>
-    </form>
-    <div class="bviggener">
-        <h1>Cifrado Viggenere</h1>
-        <br><br>
-        <button onclick="Viggenere()">Viggenere</button>
+    <div class="barra">Cifrados
+        <p class="pname">5IV10 Suárez Ramírez Gustavo</p>
     </div>
-</div>
-<div id="Menu_cesar" class="Menu_cesar">
-<p>Cifrado Cesar</p>
-</div>
-<div id="Menu_viggenere" class="Menu_viggenere">
-    <p>Cifrado Cesar</p>
-</div>    
+
+    <div id="menu">
+        <div>
+            <h1>Cifrado Cesar</h1>
+            <br><br>
+            <button type="button" onclick="cesar();">Cesar</button>
+        </div>
+        <div class="bviggener">
+            <h1>Cifrado Viggenere</h1>
+            <br><br>
+            <button onclick="viggenere();">Viggenere</button>
+        </div>
+    </div>
+
+    <div id="Menu_cesar">
+        <h1>Cifrado Cesar</h1>
+        <label for="txt">Introduce la frase que quieres cifrar con cifrado cesar </label>
+        <input type="text" name="txt" id="cadena">
+        <br><br>
+        <label for="desp">Coloca las casillas que quieres recorrer</label>
+        <input type="text" name="desp">
+        <br><br>
+        <button onclick="cifrar();" value="Cifrar">Cifrar</button><button  onclick="descifrar();">Decifrar</button>
+        <br><br>
+        <label for="resultadoC">Mensaje Cifrado:</label>
+        <div id="resultadoC"></div>
+        <br><br>
+        <button onclick="Menu();">Regresar a Menu</button>
+    </div>
+    
+    <div id="Menu_viggenere">
+        <h1>Cifrado Viggenere</h1>
+        <label for="MensajeV">Introduce la frase que quieres cifrar con cifrado viggenere </label>
+        <input type="text" name="MensajeV">
+        <br><br>
+        <label for="Clave">Coloca la clave para cifrar</label>
+        <input type="text" name="Clave">
+        <br><br>
+        <label for="resultadoV">Coloca la clave para cifrar</label>
+        <p id="resultadoV"></p>
+        <br><br>
+        <button onclick="Menu();">Regresar a Menu</button>
+    </div> 
+       
 </body>
 </html>

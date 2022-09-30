@@ -57,11 +57,9 @@ var cesar=cesar|| (function(){
 })();
 
 function cifrar(){
-    document.getElementById("resultado").innerHTML=
-    cesar.encode(document.getElementById("cadena").value,3);
+    document.getElementById("resultadoC").innerHTML= cesar.encode(document.getElementById('cadena').value, parseInt(document.getElementById("desp").value))   
 }
 
 function descifrar(){
-    document.getElementById("resultado").innerHTML=
-    cesar.decode(document.getElementById("cadena").value,3);
+    document.getElementById("resultadoC").innerHTML=cesar.decode(document.getElementById("cadena").value,3);
 }

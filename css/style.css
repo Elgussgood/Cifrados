@@ -29,7 +29,7 @@ button{
     font-family: 'Noto Sans Mono', monospace;
     background-color: black;
 }
-.menu{
+#menu{
     position: relative;
     display:block;
     padding: 7rem;
@@ -38,15 +38,11 @@ button{
 .bviggener{
     padding-top: 7rem;
 }
-.Menu_cesar{
-    display: block;
-    position: relative;
-    top: -30rem;
-    margin-left: 30%;
-}
-.Menu_viggenere{
+#Menu_cesar{
     display: none;
     position: relative;
-    padding: 7rem;
-    margin-left: 30%;
+}
+#Menu_viggenere{
+    display: none;
+    position: relative;
 }
