@@ -18,12 +18,12 @@
         <div>
             <h1>Cifrado Cesar</h1>
             <br><br>
-            <button type="button" onclick="cesar();">Cesar</button>
+            <button type="button" onclick="Mostrar_cesar();">Cesar</button>
         </div>
         <div class="bviggener">
             <h1>Cifrado Viggenere</h1>
             <br><br>
-            <button onclick="viggenere();">Viggenere</button>
+            <button onclick="Mostrar_viggenere();">Viggenere</button>
         </div>
     </div>
 
@@ -35,12 +35,13 @@
         <label for="desp">Coloca las casillas que quieres recorrer</label>
         <input type="text" name="desp" id="desp">
         <br><br>
-        <button onclick="cifrar();" value="Cifrar">Cifrar</button><button  onclick="descifrar();" value="Descifrar">Decifrar</button>
+        <button onclick="cifrarC();" value="Cifrar">Cifrar</button>
+        <button  onclick="descifrarC();" value="Descifrar">Decifrar</button>
         <br><br>
         <label for="resultadoC">Mensaje Cifrado:</label>
         <div id="resultadoC"></div>
         <br><br>
-        <button onclick="Menu();">Regresar a Menu</button>
+        <button onclick="Mostrar_menu();">Regresar a Menu</button>
     </div>
     
     <div id="Menu_viggenere">
@@ -51,12 +52,13 @@
         <label for="llave">Coloca la clave para cifrar</label>
         <input type="text" id="llave">
         <br><br>
-        <button type="button" value="Cifrar" id="ci">Cifrar</button><button type="button" value="Descifrar" id="di">Decifrar</button>
+        <button type="button" value="Cifrar" id="ci">Cifrar</button>
+        <button type="button" value="Descifrar" id="di">Decifrar</button>
         <br><br>
         <label for="resultadoV">Mensaje Cifrado: </label>
         <p id="resultadoV"></p>
         <br><br>
-        <button onclick="Menu();">Regresar a Menu</button>
+        <button onclick="Mostrar_menu();">Regresar a Menu</button>
     </div> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/Cesar.js"></script>
